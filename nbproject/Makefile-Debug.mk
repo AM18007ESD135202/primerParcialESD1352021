@@ -57,7 +57,7 @@ TESTOBJECTFILES= \
 	${TESTDIR}/tests/newcunittest4.o \
 	${TESTDIR}/tests/newcunittest5.o \
 	${TESTDIR}/tests/newcunittest6.o \
-	${TESTDIR}/tests/newcunittest7.o
+	${TESTDIR}/tests/newcunittest8.o
 
 # C Compiler Flags
 CFLAGS=-fprofile-arcs -ftest-coverage
@@ -104,7 +104,7 @@ ${TESTDIR}/TestFiles/f3: ${TESTDIR}/tests/newcunittest2.o ${OBJECTFILES:%.o=%_no
 	${MKDIR} -p ${TESTDIR}/TestFiles
 	${LINK.c} -o ${TESTDIR}/TestFiles/f3 $^ ${LDLIBSOPTIONS}   -lcunit 
 
-${TESTDIR}/TestFiles/f6: ${TESTDIR}/tests/newcunittest7.o ${OBJECTFILES:%.o=%_nomain.o}
+${TESTDIR}/TestFiles/f6: ${TESTDIR}/tests/newcunittest8.o ${OBJECTFILES:%.o=%_nomain.o}
 	${MKDIR} -p ${TESTDIR}/TestFiles
 	${LINK.c} -o ${TESTDIR}/TestFiles/f6 $^ ${LDLIBSOPTIONS}   -lcunit 
 
@@ -131,10 +131,10 @@ ${TESTDIR}/tests/newcunittest2.o: tests/newcunittest2.c
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newcunittest2.o tests/newcunittest2.c
 
 
-${TESTDIR}/tests/newcunittest7.o: tests/newcunittest7.c 
+${TESTDIR}/tests/newcunittest8.o: tests/newcunittest8.c 
 	${MKDIR} -p ${TESTDIR}/tests
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newcunittest7.o tests/newcunittest7.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/newcunittest8.o tests/newcunittest8.c
 
 
 ${TESTDIR}/tests/newcunittest4.o: tests/newcunittest4.c 

@@ -27,7 +27,7 @@
         <itemPath>tests/newcunittest2.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f6" displayName="carnet" projectFiles="true" kind="TEST">
-        <itemPath>tests/newcunittest7.c</itemPath>
+        <itemPath>tests/newcunittest8.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2"
                      displayName="cuanta de colunas"
@@ -138,7 +138,7 @@
       </item>
       <item path="tests/newcunittest6.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="tests/newcunittest7.c" ex="false" tool="0" flavor2="0">
+      <item path="tests/newcunittest8.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -225,7 +225,7 @@
       </item>
       <item path="tests/newcunittest6.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="tests/newcunittest7.c" ex="false" tool="0" flavor2="0">
+      <item path="tests/newcunittest8.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

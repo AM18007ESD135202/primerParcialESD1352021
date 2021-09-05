@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <CUnit/Basic.h>
 #include "../prototipos.h"
+
 /*
  * CUnit Test Suite
  */
@@ -15,10 +16,11 @@ int clean_suite(void) {
     return 0;
 }
 
-char* carnet();
-
 void testCarnet() {
-
+    const char* result = carnet();
+    char *nombre="Aviles Morán Ernesto Alexander,AM18007";
+        CU_ASSERT_STRING_EQUAL(result,nombre);
+   
 }
 
 int main() {
@@ -29,7 +31,7 @@ int main() {
         return CU_get_error();
 
     /* Add a suite to the registry */
-    pSuite = CU_add_suite("newcunittest7", init_suite, clean_suite);
+    pSuite = CU_add_suite("newcunittest8", init_suite, clean_suite);
     if (NULL == pSuite) {
         CU_cleanup_registry();
         return CU_get_error();
