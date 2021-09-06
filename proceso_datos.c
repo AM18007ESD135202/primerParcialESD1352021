@@ -141,5 +141,5 @@ tipo_dato** multliplicacion_matriz(tipo_dato **V_1,int fila,int columas,tipo_dat
 
 
 const char* carnet(){
-    return "Aviles Morán Ernesto Alexander,AM18007";
+    return "AM18007";
 }
