@@ -18,7 +18,7 @@ int clean_suite(void) {
 
 void testCarnet() {
     const char* result = carnet();
-    char *nombre="Aviles Morán Ernesto Alexander,AM18007";
+    char *nombre="AM18007";
         CU_ASSERT_STRING_EQUAL(result,nombre);
    
 }
